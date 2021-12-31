@@ -9,7 +9,7 @@ import {
   PointLight,
   AmbientLight,
   TextureLoader,
-} from "three";
+} from './node_modules/three/build/three.module.js';
 
 const FOV = 75
 let cameraWidth = window.innerWidth

@@ -7,7 +7,7 @@ import {
   WebGLRenderer,
   PointLight,
   AmbientLight,
-} from "three";
+} from './node_modules/three/build/three.module.js';
 
 let FOV = 50
 let cameraWidth = window.innerWidth/2

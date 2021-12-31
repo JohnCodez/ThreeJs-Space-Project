@@ -6,7 +6,7 @@ import {
   MeshStandardMaterial,
   SphereGeometry,
   TextureLoader,
-} from "three";
+} from './node_modules/three/build/three.module.js';
 import { getRandomXYZ } from "./helpers";
 
 const moonTexture = new TextureLoader().load(moonImg)

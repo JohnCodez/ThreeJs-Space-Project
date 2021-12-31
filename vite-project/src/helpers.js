@@ -1,6 +1,6 @@
 import {
   MathUtils,
-} from "three";
+} from './node_modules/three/build/three.module.js';
 
 export function getRandomXYZ(range) {
   const coordinates = {
