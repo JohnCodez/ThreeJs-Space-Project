@@ -1,0 +1,58 @@
+::-webkit-scrollbar {
+  background: transparent;
+  width: 14px;
+}
+ 
+::-webkit-scrollbar-thumb {
+  background: rgb(27,40,84); 
+  border-radius: 10px;
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(49, 73, 150); 
+}
+
+-webkit-scrollbar-track-piece {
+  display: none;
+}
+
+body {
+  overflow: overlay;
+  font-family: 'Pushster', cursive;
+}
+
+#bg {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+#moon {
+  position: fixed;
+  top: 0;
+  left: 50%;
+  z-index: 1;
+  user-select: none;
+  -moz-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+}
+
+#content{
+  position: absolute;
+  color: white;
+  padding: 4rem;
+  padding-left: 8rem;
+}
+
+#title {
+  font-size: 50px;
+  -webkit-text-stroke: 0.1px black;
+}
+
+p {
+  width: 45%;
+  font-size: 22px;
+  -webkit-text-stroke: 0.3px black;
+}

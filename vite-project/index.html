@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Moon Article | Test Project</title>
+  </head>
+  <body>
+    <div id="app"></div>
+    <canvas id='bg'></canvas>
+    <canvas id='moon'></canvas>
+    <style>
+      @import url('https://fonts.googleapis.com/css2?family=Pushster&display=swap');
+    </style>
+    <script type="module" src="src/helpers.js" defer></script>
+    <script type="module" src="src/shapes.js" defer></script>
+    <script type="module" src="src/sideCamera.js" defer></script>
+    <script type="module" src="/main.js" defer></script>
+    <div id='content'>
+      <h1 id='title'>Moon Article Test Project</h1>
+      <p>This is a test project I made to mess around with 3D in JavaScript using ThreeJs. Best on chrome as other browsers don't support certain things, like the custom transparent scrollbar.</p>
+      <p>Although the background is a static galaxy image, many of the stars are 3D, scroll to see them move! The way I got them to move as if they are floating is by adding to a number that when past a certain amount will start to decrease by a percentage and move them by that same percentage, which makes them increase in speed when scrolling as the percentage will result in a higher number and then as it gets smaller, when not scrolling, it slows down until it eventually stops.</p>
+      <p>They key to giving it that smooth gliding effect, for space, is to not directly update the coordinates but instead dynamically change the the amount it moves by, even after or between scrolls.</p>
+      <p>The moon has Idle spinning which is by default on but pauses once clicked, try it! When let go it will resume spinning from that location. Whats cooler than starting and stopping an idle movement? Spinning it yourself! click and hold to take control of the moon, and while continuing to hold as you move the mouse the moon will rotate too!</p>
+      <p>If you're wondering how the moon has a non-warped shape whereas the stars seem to be moving around the camera in a big circle, that's because it was setup exactly like that with the help of two different cameras!</p>
+      <p>This decision was made because I liked the look of the stars warping around the camera to give that feeling of being in space but the moon is like a showcase item that shouldn't appear to move with the stars, so I needed a more even ( I guess flatter) look. I accomplish this with a second camera, which is half of the screen's width, in charge of rendering only the moon, meaning that the moon is in the middle of the camera but on the side of the screen. This includes its own light sources too giving that effect of the sun being somewhere far off the screen to the right</p>
+      <p>I'm aware of a few bugs that exist like the moon rotating in the wrong direction when vertically flipped and certain things not scalling when the page size is changed (especially mobile is broken) but this project was just a little test to have fun and learn about ThreeJs. You can check out the code for this at https://github.com/JohnCodez/ThreeJs-Space-Project</p>
+      <p>That being said I would rather spend my time making a new cool project with proper functionality and support, instead of refining a fake moon article page. That cool new project will be a game, which I am not currently sure what it will be, but I will have a lot of fun making a game with some 3D elements or maybe fully 3D! More on that soon!</p>
+    </div>
+  </body>
+</html>
